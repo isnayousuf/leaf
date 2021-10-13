@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .leaf{
+            margin-top: 2rem;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 15rem 0.5rem 15rem 5rem ;
+            border: 2px solid green;
+            transform: rotate(5deg);
+            position: relative;
+            background-color: green;
+            z-index: 2;
+        }
+        .leaf::after{
+            content: '';
+            width: 1.2rem;
+            height: 12rem;
+            border: 2px solid black;
+            z-index: -2;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 16.8rem;
+            left: -3.6rem;
+          
+            border-radius: 0 0 0 2rem;
+            background:rgb(143, 84, 42);
+        }
+        .leaf::before{
+            content: '';
+            width: 0.1rem;
+            height: 26rem;
+            border: 2px solid black;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 10.4rem;
+            top: -3.7rem;
+
+        }
+        .one{
+            height: 9.5rem;
+            width:0;
+            transform: rotate(5deg);
+            background-color: gray;
+        }
+        .two{
+            height: 11.7rem;
+            width:0;
+            transform: rotate(-95deg);
+            background-color: gray;
+            position: absolute;
+            left: 8.6rem;
+        }
+        .three{
+            height: 12rem;
+            width:0;
+            transform: rotate(5deg);
+            position: absolute;
+            top: 3.6rem;
+            left: 4rem;
+            background-color: gray;
+        }
+        .four{
+            height: 10.3rem;
+            width:0;
+            transform: rotate(85deg);
+            position: absolute;
+            top: 6rem;
+            left: 13.3rem;
+            background-color: gray;
+        }
+        .five{
+            height: 6.5rem;
+            width:0;
+            transform: rotate(85deg);
+            position: absolute;
+            top: 3rem;
+            left: 16.5rem;
+            background-color: gray;
+        }
+        .six{
+            height: 4.7rem;
+            width:0;
+            transform: rotate(5deg);
+            position: absolute;
+            top: -0.5rem;
+            left: 15rem;
+            background-color: gray;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="leaf">
+            <hr class ="one">
+            <hr class="two">
+            <hr class="three">
+            <hr class="four">
+            <hr class="five">
+            <hr class="six">
+        </div>
+    </main>
+</body>
+</html>
